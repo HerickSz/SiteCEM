@@ -1,0 +1,492 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+nav {
+    width: 100%;
+    background: #00004b;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: content-box;
+}
+
+nav .logo {
+    float: left;
+}
+
+nav .logo img {
+    height: 70px;
+    transition: .4s;
+}
+
+nav.blue .logo img {
+    height: 60px;
+}
+
+nav ul li a svg {
+    width: 40px;
+    height: 20px;
+}
+
+.marca {
+    color: #fff;
+    font-family: 'Asap';
+    font-size: 15px;
+    font-weight: bold;
+}
+
+nav.blue {
+    background: rgba(0, 0, 75, 0.384);
+    z-index: 3;
+    height: 60px;
+}
+
+nav.blue:hover {
+    transition: 0.3s ease-in;
+    background: rgba(0, 0, 75, 0.8);
+}
+
+nav.blue ul li a {
+    color: #fff;
+    line-height: 60px;
+}
+
+nav ul {
+    float: right;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px;
+}
+
+nav ul li a {
+    line-height: 80px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    transition: .2s;
+    border: 5px solid transparent;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+nav h4 {
+    color: #ffffff;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Asap';
+    transition: .2s;
+    float: right;
+    margin-left: 20px;
+}
+
+nav ul li a .active,
+nav ul li a:hover {
+    color: #fff;
+    background: #f00;
+}
+
+section.cont1 {
+    width: 100%;
+    height: 95vh;
+    background: url(../img/HeaderMix.jpg);
+    background-size: cover;
+}
+
+section.cont2 {
+    width: 50%;
+    float: right;
+}
+
+section.cont3 {
+    width: 50%;
+    float: right;
+}
+
+section.cont2 img {
+    width: 50vh;
+    height: 50%;
+    margin-left: 50px;
+    border: 5px solid #fcb41a;
+}
+
+
+section.conteudo {
+    margin-left: 10%;
+    padding: 30px;
+    text-align: left;
+}
+
+.tituloConteudo0 {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    color: #00004b
+}
+
+.tituloConteudo {
+    margin-top: 10%;
+    padding: 0;
+    font-size: 2em;
+    color: #00004b
+}
+
+.tituloConteudoLast {
+    margin-bottom: 15%;
+}
+
+section.conteudo p {
+    margin: 20px 0px;
+    padding: 0;
+    font-size: 1.2em;
+    width: 70%;
+}
+
+#ensino {
+    margin-bottom: 10%;
+    width: 90%;
+    text-align: center;
+    background-color: rgb(255, 187, 0);
+}
+
+.responsive-bar {
+    display: none;
+}
+
+
+.btn-inicio {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #f00;
+    font-size: .9em;
+    border-radius: 3px;
+}
+
+.btn-inicio:hover {
+    background-color: #3200c7;
+    transition: all 0.4s ease-in-out;
+}
+
+.botao1 {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #3200c7;
+    font-size: .9em;
+    border-radius: 3px;
+}
+
+.botao1:hover {
+    background-color: #f00;
+    transition: all 0.4s ease-in-out;
+}
+
+#contato {
+    background: blue;
+    background-size: cover;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footerlogo {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin-top: 5%;
+    border-radius: 5%;
+}
+
+.endereco {
+    width: 25%;
+}
+
+.endereco img {
+    margin-left: 30%;
+    width: 60px;
+    height: 60px;
+}
+
+
+#contato p {
+    color: #FFFFFF;
+    margin-bottom: 4%;
+}
+
+#contato h2 {
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.contatoimg img {
+    width: 35px;
+    height: 35px;
+    margin-top: 10px;
+}
+
+.contatoimg a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #ffffff;
+    margin-left: 0px;
+    text-decoration: underline;
+    padding: 5%;
+}
+
+.contatoimg {
+    display: block;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+.contatoimages {
+    display: block;
+    max-width: 50%;
+    margin-right: 20%;
+}
+
+@media (max-width:1000px) {
+    .responsive-bar {
+        display: block;
+        width: 100%;
+        height: 60px;
+        background: rgb(0, 0, 75);
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 5px 20px;
+        box-sizing: border-box;
+        z-index: 4;
+    }
+
+    .responsive-bar .logo img {
+        float: left;
+        height: 50px;
+    }
+
+    .menu svg {
+        width: 25px;
+    }
+
+    .responsive-bar .menu svg {
+        height: 50px;
+        float: right;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        line-height: 50px;
+        cursor: pointer;
+    }
+
+    .responsive-bar .menu svg:hover {
+        fill: rgb(255, 187, 0);
+    }
+
+    nav.blue {
+        background: rgb(0, 0, 75);
+        height: 50px;
+        padding: 0;
+        width: 100%;
+    }
+
+    .marca {
+        margin-top: 20px;
+        float: left;
+        margin-left: 10px;
+        font-size: 15px;
+    }
+
+
+    nav .logo {
+        display: none;
+    }
+
+
+    nav ul {
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        background: rgb(0, 0, 75);
+        left: 0;
+        float: none;
+        display: none;
+        transition: all 0.5s ease-out;
+        border-top: 1px solid #fff;
+    }
+
+    nav ul.active {
+        display: block;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a svg {
+        width: 40px;
+        height: 20px;
+    }
+
+    nav ul li a svg:hover {
+        color: rgb(255, 187, 0);
+    }
+
+
+    nav ul li a {
+        display: block;
+        padding: 0;
+        width: 100%;
+        text-align: left;
+        line-height: 30px !important;
+        color: #fff;
+    }
+
+    section.cont1 {
+        margin-top: 30px;
+        width: 100%;
+        background-repeat: no-repeat;
+        height: 65vw;
+    }
+
+    section.conteudo {
+        align-content: center;
+        padding: 0%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    section.cont2 img {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        margin-left: 50%;
+    }
+
+    #ensino {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+    section.conteudo h1 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 0;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    section.conteudo p {
+        font-size: 16px;
+        font-weight: 400;
+        width: 80%;
+        left: 10%;
+        position: relative;
+        align-content: center;
+    }
+
+    .tituloConteudo {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .tituloConteudoLast {
+        margin: 0;
+    }
+
+    .botao1 {
+        padding: 10px;
+        margin: 0%;
+        max-width: 100px;
+        position: relative;
+        left: 35%;
+        margin-bottom: 10%;
+        text-align: center;
+    }
+
+    .btn-inicio {
+        padding: 5px;
+        margin: 0%;
+        height: 30px;
+        max-width: 120px;
+        position: relative;
+        left: 35%;
+        margin-bottom: 10%;
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .footer {
+        font-size: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #contato h2 {
+        font-size: 17px;
+    }
+
+    .contatoimg {
+        display: block;
+        width: 100%;
+    }
+
+    .contatoimages {
+        margin-right: 15px;
+    }
+
+    .endereco {
+        width: 45%;
+        text-align: center;
+    }
+
+    .endereco img {
+        margin: 0;
+        width: 40px;
+        height: 40px;
+    }
+
+    .horario {
+        text-align: center;
+    }
+
+    .contatoimg img {
+        width: 35px;
+        height: 35px;
+        margin-top: 10px;
+    }
+
+    .contatoimg a {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    .footerlogo {
+        display: none;
+    }
+
+}
